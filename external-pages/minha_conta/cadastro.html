@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="shortcut icon" href="../../imagens/favicon.png" type="image/x-icon">
+    <title>ChipShop</title>
+    </head>
+<body>
+    <header>
+            <div class="header_mc">
+                <a href="../../index.html">
+                    <img class="logo_mc" src="../../imagens/logo.png" alt="">
+                </a>
+                <div class="contatos_mc">
+                    <a href="#">
+                        <img class="tel" src="../../imagens/imagens_mc/tel_mc.png" alt="">
+                        <p>83 3334-1661</p>
+                    </a>
+                    <a href="#">
+                        <img class="mail" src="../../imagens/imagens_mc/mail_mc.png" alt="">
+                        <p>contato@chipshop.com.br</p>
+                    </a href="#">
+                    <p class="contatos_mc_p" >De seg a sex 8:00-18:00 / sab 08:00-12:00</p>
+                </div>
+            </div>
+            <nav id="menu-scroll">
+                <div class="menu-menu">
+                    <input type="checkbox" name="" id="check">
+                    <label for="check">
+                        <p class="icon-menu-lateral">&#9776; Menu</p>
+                    </label>
+                    <nav class="menu-lateral">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./external-pages/sobre/sobre.html">A CHIPSHOP</a></li>
+                            <li><a href="./external-pages/compras/pcs-gamer.html">PC'S GAMER</a></li>
+                            <li><a href="./external-pages/compras/pcs-office.html">PC'S OFFICE</a></li>
+                            <li><a href="./external-pages/compras/pecas-acessorios.html">PEÇAS</a></li>
+                            <li><a href="./external-pages/sobre/atendimento.html">ATENDIMENTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div></div>
+                <a class="logo" href="/"><img src="../../imagens/logo.png" alt="" srcset=""></a>
+                <input type="text" name="pesquisa" id="input-principal" placeholder="Olá, o que você procura?">
+                <div class="my-account">
+                    <a href="./external-pages/minha_conta/minha_conta.html"><img src="../../imagens/people.png" alt="" srcset="">Minha Conta</a>
+                </div>
+                <a class="logo-market" href="/"><img src="../../imagens/market.png" alt="" srcset=""></a>
+            </nav>
+    </header>
+    <main>
+        <section class="box">
+            <form action="" id="form">
+                <fieldset>
+                    <legend><b>Cadastro de Clientes</b></legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser required" oninput="nameValidate()" required>
+                        <label for="nome" class="labelInput">Nome Completo</label>
+                        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser required" oninput="emailValidate()" required>
+                        <label for="email" class="labelInput">Email</label>
+                        <span class="span-required">Digite um e-mail válido</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser required" oninput="telephoneValidate()" required>
+                        <label for="tel" class="labelInput">Telefone</label>
+                        <span class="span-required">Digite um telefone/celular válido (Ex: (99) 99999-9999)</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="senha" id="senha" class="inputUser required" oninput="passwordValidate()" required>
+                        <label for="senha" class="labelInput">Senha</label>
+                        <span class="span-required">Digite uma senha com no mínimo 8 caracteres (mínimo 1 letra maiúscula, 1 caractere especial e 1 número)</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="repitaSenha" id="repitaSenha" class="inputUser required" oninput="passwordValidateRepeat()" required>
+                        <label for="repitaSenha" class="labelInput">Repita a Senha</label>
+                        <span class="span-required">Senhas devem ser compatíveis</span>
+                    </div>
+                    <div class="sexo">
+                        <p>Gênero:</p>
+                        <div class="sexo-m">
+                            <input type="radio" name="genero" id="masculino" value="masculino" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="sexo-f">
+                            <input type="radio" name="genero" id="feminino" value="feminino" required>
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="sexo-o">
+                            <input type="radio" name="genero" id="outro" value="outro" required>
+                            <label for="outro">Outro</label>
+                        </div>
+                    </div>
+                    <div class="inputDate" oninput="dateValidate()">
+                        <label for="data_nasc"><b>Data de Nascimento:</b></label>
+                        <input type="date" name="data_nasc" id="data_nasc" class="required" required>
+                        <span class="span-required">Você não é maior que 18 anos</span>
+                    </div>
+                    <div class="inputLocal">
+                        <div class="local">
+                            <input type="text" name="cidade" id="cidade" class="inputUser required" required>
+                            <label for="cidade" class="labelInput">Cidade:</label>
+                            <span class="span-required"></span>
+                        </div>
+                        <div class="local">
+                            <input type="text" name="estado" id="estado" class="inputUser required" oninput="stateValidate()" required>
+                            <label for="estado" class="labelInput">Estado:</label>
+                            <span class="span-required">Digite um estado válido (Ex: PB)</span>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="endereco" id="endereco" class="inputUser required" required>
+                        <label for="endereco" class="labelInput">Endereço:</label>
+                    </div>
+                    <input type="submit" value="Enviar" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="copyright_mc">
+            <p>© Copyright 2002-2022 Protect My Work Limited. All Rights Reserved.</p>
+            <p>R. Nossa Sra. de Lourdes, 193 - Jardim Tavares, Campina Grande - PB, Brasil</p>
+            <p>Email: support@chipshop.com.br</p>
+        </div>
+    </footer>
+    <script src="../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.sobre-geral {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
+.sobre-links {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+}
+
+.sobre-links a{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.sobre-links .ativo {
+    color: #ffa300;
+}
+
+.sobre-links a:hover {
+    color: #ffa300;
+    opacity: 1;
+}
+
+.sobre-texto{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 10px;
+    width: 70%;
+
+}
+
+.texto-p {
+    background-color: #1313137a;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #797878;
+}
+
+.texto-p p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.titulo-sobre {
+    width: 43%;
+    margin: auto;
+}
+
+.titulo-sobre h1 {
+    text-align: right;
+    font-size: 40px;
+    font-style: italic;
+    color: #fff;
+}
+
+.sobre-texto .sobre-p {
+    border-top: 3px solid #ffa300;
+    padding: 10px 0;
+}
+
+/************* ATENDIMENTO *************/
+
+.titulo-atendimento {
+    text-align: center;
+    padding: 20px;
+}
+
+.texto-p a{
+    color: #ffa300;
+}
+
+.email {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+.input-atendimento-dados {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dados-atendimento {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.submit-atendimento {
+    width: 100%;
+    background-color: #ffa300;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-atendimento {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}

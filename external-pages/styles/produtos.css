@@ -1,0 +1,132 @@
+body {
+    background-image: url('../../imagens/fundo.jpg');
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.titulo{
+    font-size: 45px;
+    font-style: italic;
+    padding-bottom: 0;
+    border-bottom: 1px solid orange;
+}
+
+.produto{
+    display: flex;
+    justify-content:center ;
+    width: 1200px;
+}
+
+.imagens_prod, .imagens_ssd{
+    background: rgba(255, 255, 255, 0.103);
+    padding: 0px 40px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocoValores{
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descricao{
+    font-size: 35px;
+}
+
+.comprar{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.comprar img{
+width: 21px;
+}
+
+.comprar button, .frete button{
+    height: 63px;
+    width: 177px;
+    background-color: orange;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.preco_parc{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.preco{
+    padding-top: 0px;
+}
+
+.preco p{
+    color: white;
+    font-size: 20px;
+}
+
+.preco h2{
+    font-weight: bolder;
+    font-size: 45px;    
+    color: orange;
+}
+
+
+.frete{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.frete button{
+    font-size: 13px;
+    height: 26px;
+    width: 90px;
+}
+
+.frete input{
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+}
+
+.descricao_produto{
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.062);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 25px;
+}
+
+.descricao_produto h2{
+    text-align: center;
+    border-bottom: 3px solid orange;
+}
+
+.descricao_produto .dp_p{
+    margin-bottom: 20px;
+}
